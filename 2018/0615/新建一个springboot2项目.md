@@ -14,5 +14,13 @@
 #### 最后是项目构建构建成功的目录结构图
 ![04](springboot2_newProject/springboot2_springboot2_newProject_4.jpg)
 
+#### 接下来是启动项目，但是启动的时候springboot会自动关闭进程。这个时候只要把POM文件里面的内置TOMTCAT中的<scope>注释掉即可
+![05](springboot2_newProject/springboot2_springboot2_newProject_5.jpg)
+
+#### 接下来访问项目，新建一个controller进行访问
+![06](springboot2_newProject/springboot2_springboot2_newProject_6.jpg)
+![07](springboot2_newProject/springboot2_springboot2_newProject_7.jpg)
+
+
 
 
