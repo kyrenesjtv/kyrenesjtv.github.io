@@ -7,4 +7,4 @@
 - [关于GPS车辆是否在规定区域内](0524/关于GPS车辆是否在规定区域内.md)
 
 ### 0615
-- [初始化一个springboot2项目](新建一个springboot2项目.md)
+- [初始化一个springboot2项目](0615/新建一个springboot2项目.md)
