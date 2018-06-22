@@ -8,3 +8,6 @@
 
 ### 0615
 - [初始化一个springboot2项目](0615/新建一个springboot2项目.md)
+
+### 0621
+- [springboot2加入Mybatis](0615/springboot2加入Mybatis.md)
