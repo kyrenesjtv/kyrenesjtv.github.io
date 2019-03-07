@@ -12,15 +12,18 @@
 		</dependency>
 ~~~
 2. 在配置文件里面 设置静态资源路径
+
 ~~~
-# 静态资源
+ 静态资源
 Spring.resources.static-locations= classpath:/
 
-# 页面跳转
+ 页面跳转
 spring.thymeleaf.prefix=classpath:/templates/
 spring.thymeleaf.suffix:.html
 ~~~
+
 3. 在页面中引入标签
+
 ~~~
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
