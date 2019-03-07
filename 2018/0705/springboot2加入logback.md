@@ -47,6 +47,9 @@
 
 
     <contextName>xcloud-print</contextName>
+    <!--  日志文件输出到项目根路径dingdang下面，以及tomcat的dingdang下面
+        <property name="LOG_PATH" value="${catalina.home}/dingdang" /> -->
+     <!-- 自定义输出路径 -->
     <property name="LOG_PATH" value="d://xcloud-print-logs" />
     <!--设置系统日志目录-->
     <property name="APPDIR" value="logs" />
