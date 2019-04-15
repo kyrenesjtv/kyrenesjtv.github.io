@@ -330,7 +330,7 @@ public class MyAccessDecisionManager implements AccessDecisionManager {
 
 ![](2.jpg)
 
-#### 输入admin  dd123456 可以看到页面。这里我使用超级管理员账号登录，可见，我看不到第二个<span>。这里我尝试了很多次，很多都不是规范的代码。我这里就不是ROLE_超级管理员。
+#### 输入admin  dd123456 可以看到页面。这里我使用超级管理员账号登录，可见，我看不到第二个span。这里我尝试了很多次，很多都不是规范的代码。我这里就不是ROLE_超级管理员（sec:authorize="hasRole('ROLE_超级管理员')"）。你可以多尝试一下
 
 ![](3.jpg)
 
@@ -403,6 +403,6 @@ public class MyWebInvocationPrivilegeEvaluator extends DefaultWebInvocationPrivi
 
 #### WebSecurityConfig里面的http.headers().frameOptions().sameOrigin();。是能够让iframe正确刷新。
 
-#### 还有最后是不是觉得，没有判断用户密码？ 其实security已经帮我们做了，WebSecurityConfig里面的configureGlobal这个方法，就帮我们判断了，如果密码不对，会报错。然后只要WebSecurityConfig里面的 (.failureUrl("/login?error=true")//设置登录有错误返回login页面并进行提示)这个会帮我们进行提示，只需要在登录界面加上这一串代码就行<div><span style="color: red" th:if="${param.error}" >用户名或密码错误</span></div>
+#### 还有最后是不是觉得，没有判断用户密码？ 其实security已经帮我们做了，WebSecurityConfig里面的configureGlobal这个方法，就帮我们判断了，如果密码不对，会报错。然后只要WebSecurityConfig里面的 (.failureUrl("/login?error=true")//设置登录有错误返回login页面并进行提示)这个会帮我们进行提示，只需要在登录界面加上这一串代码就行<div th:if="${param.error}" >用户名或密码错误</div>
 
 #### 这里我还没有实现自定义登录页面登录。后续会不上，现在世界是POST提交，然后security自己就会帮我们处理好
