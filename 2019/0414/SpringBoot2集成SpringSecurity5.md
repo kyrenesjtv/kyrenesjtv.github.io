@@ -399,7 +399,7 @@ public class MyWebInvocationPrivilegeEvaluator extends DefaultWebInvocationPrivi
 ![](6.jpg)
 
 
-#### 写在最后，我这边的跳转路径为init，所以数据库里面必须也要有/init，才能够访问到init页面。不然是会报错的。只需要记住一点，如果你要访问或跳转的url不在WebSecurityConfig他允许的访问范围内，你都是需要拥有这个url的。
+#### 写在最后，我这边的登录成功后跳转路径为init，所以数据库里面必须也要有/init，用户也必须拥有，才能够访问到init页面。不然是会报错的。然后还有另外需要记住一点，只要sec:authorize-url="/admin/foo" 你加了这个url判断，数据库必须要有这个url。
 
 #### WebSecurityConfig里面的http.headers().frameOptions().sameOrigin();。是能够让iframe正确刷新。
 
