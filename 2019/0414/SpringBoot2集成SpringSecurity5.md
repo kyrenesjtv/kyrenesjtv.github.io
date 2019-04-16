@@ -403,6 +403,6 @@ public class MyWebInvocationPrivilegeEvaluator extends DefaultWebInvocationPrivi
 
 #### WebSecurityConfig里面的http.headers().frameOptions().sameOrigin();。是能够让iframe正确刷新。
 
-#### 还有最后是不是觉得，没有判断用户密码？ 其实security已经帮我们做了，WebSecurityConfig里面的configureGlobal这个方法，就帮我们判断了，如果密码不对，会报错。然后只要WebSecurityConfig里面的 (.failureUrl("/login?error=true")//设置登录有错误返回login页面并进行提示)这个会帮我们进行提示，只需要在登录界面加上这一串代码就行<div th:if="${param.error}" >用户名或密码错误</div>
+#### 还有最后是不是觉得，没有判断用户密码？ 其实security已经帮我们做了，WebSecurityConfig里面的configureGlobal这个方法，就帮我们判断了，如果密码不对，会报错。然后只要WebSecurityConfig里面的 (.failureUrl("/login?error=true")//设置登录有错误返回login页面并进行提示)这个会帮我们进行提示，只需要在登录界面加上这一串代码就行div th:if="${param.error}" >用户名或密码错误</div
 
 #### 这里我还没有实现自定义登录页面登录。后续会不上，现在世界是POST提交，然后security自己就会帮我们处理好
