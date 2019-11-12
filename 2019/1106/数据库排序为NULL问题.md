@@ -2,6 +2,6 @@
 
 ~~~
 select *****
-order if(ISNULL(xxx),0,1) asc
+order by if(ISNULL(xxx),0,1) asc
 
 ~~~
