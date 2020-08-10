@@ -10,3 +10,5 @@
 
 [java核心技术 ](java核心技术/index.md)
 
+[计算机组成原理 ](计算机组成原理/index.md)
+
