@@ -1,4 +1,4 @@
-###pageHelper分页引起失效
+### pageHelper分页引起失效
 
 #### 如果我们的SQL语句打印出来，只有count(),而没有limit的话,就证明分页已经失效了。
 
